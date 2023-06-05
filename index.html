@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hiring.com</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /> <span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /> <span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/jobs.png" /> <span>Jobs</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /> <span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" />
+              <span>Notifications</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online" onclick="profileMenuToggle()">
+          <img src="images/user-1.png" class="nav-profile-img" />
+        </div>
+      </div>
+
+      <!--profile-drop-down-menu -->
+      <div class="profile-menu-wrap">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="images/user-1.png">
+                <div>
+                    <h3>Navin Gurung</h3>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="profile-menu-link">
+                <img src="images/feedback.png">
+                <p>Give Feedback</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/setting.png">
+                <p>Setting & Privacyk</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/help.png">
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/display.png">
+                <p>Display & Accessibility</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/logout.png">
+                <p>Logout</p>
+                <span>></span>
+            </a>
+        </div>
+            
+      </div>
+    </nav>
+
+    <div class="container">
+      <!--- -------------- Left-sidebar------------- -->
+      <div class="left-sidebar">
+        <div class="siderbar-profile-box">
+          <img src="images/cover-pic.png" width="100%" />
+          <div class="sidebar-profile-info">
+            <img src="images/user-1.png" alt="" />
+            <h1>Navin Gurung</h1>
+            <h3>Jr. Frontend Web Developer</h3>
+            <ul>
+              <li>Your Profile Views<span>56</span></li>
+              <li>Your Post Views<span>187</span></li>
+              <li>Your Connections<span>453</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" alt="" /> My Items</a>
+            <a href="#"><img src="images/premium.png" alt="" /> Try Premium</a>
+          </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+          <h3>RECENT</h3>
+          <a href="#"><img src="images/recent.png" />Web Development</a>
+          <a href="#"><img src="images/recent.png" />User Interface</a>
+          <a href="#"><img src="images/recent.png" />Online Learning</a>
+          <a href="#"><img src="images/recent.png" />Code Better</a>
+          <a href="#"><img src="images/recent.png" />Frontend Package</a>
+          <a href="#"><img src="images/recent.png" />Group Learning</a>
+          <h3>Groups</h3>
+          <a href="#"><img src="images/group.png" />Web Design Group</a>
+          <a href="#"><img src="images/group.png" />HTML & CSS Learners</a>
+          <a href="#"
+            ><img src="images/group.png" />Python & JavaScript Group</a
+          >
+          <a href="#"><img src="images/group.png" />Learn Coding Group</a>
+          <h3>HASHTAG</h3>
+          <a href="#"><img src="images/hashtag.png" />webdevelopment</a>
+          <a href="#"><img src="images/hashtag.png" />userinterface</a>
+          <a href="#"><img src="images/hashtag.png" />onlinelearning</a>
+          <div class="discover-more-link">
+            <a href="#">Discover more</a>
+          </div>
+        </div>
+
+        <p id="show-more-link" onclick="toggleActivity()">Show more <b>+</b></p>
+      </div>
+      <!--- -------------- Main content ------------- -->
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/user-1.png" alt="" />
+            <textarea type="text" placeholder="write a post"></textarea>
+          </div>
+
+          <div class="create-post-links">
+            <li><img src="images/photo.png" /> photo</li>
+            <li><img src="images/video.png" /> video</li>
+            <li><img src="images/event.png" /> event</li>
+            <li>post</li>
+          </div>
+        </div>
+
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by: <span><img src="images/down-arrow.png" /></span>
+          </p>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-3.png" />
+            <div>
+              <h1>Harry Grg</h1>
+              <small>Founder and Ceo at Giller Group</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+            impedit ab quas sapiente laudantium? Obcaecati expedita tempora
+            laborum eaque asperiores dicta, aut quidem corporis placeat!
+          </p>
+          <img src="images/post-image-1.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-user">Leon Grg and 85 others</span>
+            </div>
+            <div>
+              <span>43 comments &middot; 44 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-5.png" />
+            <div>
+              <h1>Hems Grg</h1>
+              <small>Ceo at GC Group</small>
+              <small>12 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+            impedit ab quas sapiente laudantium? Obcaecati expedita tempora
+            laborum eaque asperiores dicta, aut quidem corporis placeat!
+          </p>
+          <img src="images/post-image-2.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-user">Leon Grg and 85 others</span>
+            </div>
+            <div>
+              <span>43 comments &middot; 44 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-4.png" />
+            <div>
+              <h1>Sandesh Grg</h1>
+              <small>Founder at GV motors</small>
+              <small>6 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+            impedit ab quas sapiente laudantium? Obcaecati expedita tempora
+            laborum eaque asperiores dicta, aut quidem corporis placeat!
+          </p>
+          <img src="images/post-image-4.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-user">Renu Grg and 185 others</span>
+            </div>
+            <div>
+              <span>43 comments &middot; 44 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-3.png" />
+            <div>
+              <h1>Harry Grg</h1>
+              <small>Founder and Ceo at Giller Group</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+            impedit ab quas sapiente laudantium? Obcaecati expedita tempora
+            laborum eaque asperiores dicta, aut quidem corporis placeat!
+          </p>
+          <img src="images/post-image-3.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-user">Leon Grg and 85 others</span>
+            </div>
+            <div>
+              <span>43 comments &middot; 44 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- -------------- right-sidebar ------------- -->
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="info-icon" />
+          <h3>Trending News</h3>
+          <a href="https://www3.nhk.or.jp/news/easy/k10014074351000/k10014074351000.html" target="_blank">G7広島サミット</a>
+          <span>19h ago &middot; 1034 readers</span>
+          <a href="#">High demand for skilled manpower</a>
+          <span>1d ago &middot; 1934 readers</span>
+          <a href="#">Less work visa for Japan, more for US</a>
+          <span>11h ago &middot; 1734 readers</span>
+          <a href="https://www3.nhk.or.jp/news/easy/k10014076571000/k10014076571000.html" target="_blank">ホンダ 「2026年からまたに出でる」</a>
+          <span>9h ago &middot; 2104 readers</span>
+          <a href="#">Elon Musks is the world's richest</a>
+          <span>12h ago &middot; 9934 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div>
+            <img src="images/user-1.png" />
+            <img src="images/mi-logo.png" />
+          </div>
+          <b>Brand and Demond in Xiaomi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="images/logo.png" />
+            <p>Hiring &#169; 2023. All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
